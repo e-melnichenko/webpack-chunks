@@ -15,6 +15,9 @@ export const commonConfig: webpack.Configuration = {
             tsLoader,
         ]
     },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js'],
+    },
     plugins: [
         htmlWebpackPlugin,
     ]
