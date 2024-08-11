@@ -6,7 +6,7 @@ import {htmlWebpackPlugin} from '../plugins';
 export const commonConfig: webpack.Configuration = {
     entry: path.resolve(__dirname, '../../src/index.tsx'),
     output: {
-        filename: 'main.js',
+        filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, '../../dist'),
         clean: true,
     },
